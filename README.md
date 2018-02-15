@@ -1,12 +1,12 @@
 # website
 
-#Aim of project
+# Aim of project
 Promove Maxime Sauvage, developer
 
-#Technology
+# Technology
 Wordpress website
 
-#How to Install
+# How to Install
 $ git clone https://github.com/oceanerousseeuw/website.git
 
 rename wp-config-sample.php in wp-config.php
@@ -21,7 +21,7 @@ create your admin account
 
 Have fun ! :D
 
-#What can you do to help me
+# What can you do to help me
 Create a contact formular on Contact Page
 
 Add pictures (with free licence) to image sections in index page
