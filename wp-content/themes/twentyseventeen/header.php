@@ -17,6 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../myTheme/css/index.css" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
@@ -34,7 +35,7 @@
 			<div class="navigation-top">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
+                </div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
 

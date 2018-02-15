@@ -14,54 +14,57 @@
  * @since 1.0
  * @version 1.0
  */
-
 get_header(); ?>
 
-<div class="wrap">
-	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
-	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
-	<?php endif; ?>
+    <div class="wrap">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
 
-			<?php
-			if ( have_posts() ) :
+                <div class="home-container">
+                    <a href="http://localhost/site_maxime/index.php/?page_id=2/">
+                        <div class="home-presentation">
+                            <img class="points" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/points1.png" alt="presentation" />
+                            <img class="presentation" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/qui.png" alt="presentation" />
+                            <img class="points" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/points2.png" alt="presentation" />
+                            <h1>Qui suis-je ?</h1>
+                        </div>
+                    </a>
 
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+                    <div class="home-sections">
+                        <div>
+                            <a href="#">
+                                <img src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/formation1.png" alt="formation" />
+                                <section class="home-formation">
+                                    <h1>Ma formation</h1>
+                                </section>
+                            </a>
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/post/content', get_post_format() );
+                            <a href="#">
+                                <section class="home-experience">
+                                    <h1>Mon expérience Pro</h1>
+                                </section>
+                            </a>
+                        </div>
 
-				endwhile;
+                        <div>
+                            <a href="#">
+                                <section class="home-interets">
+                                    <h1>Mes hobbies</h1>
+                                </section>
+                            </a>
 
-				the_posts_pagination( array(
-					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-				) );
+                            <a href="#">
+                                <section class="home-realisations">
+                                    <h1>Mes réalisations</h1>
+                                </section>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-			else :
-
-				get_template_part( 'template-parts/post/content', 'none' );
-
-			endif;
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+            </main><!-- #main -->
+        </div><!-- #primary -->
+    </div><!-- .wrap -->
 
 <?php get_footer();
