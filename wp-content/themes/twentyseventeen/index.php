@@ -22,11 +22,11 @@ get_header(); ?>
             <main id="main" class="site-main" role="main">
 
                 <div class="home-container">
-                    <a href="http://localhost/site_maxime/index.php/?page_id=2/">
+                    <a href="<?php echo bloginfo('url')?>/presentation/">
                         <div class="home-presentation">
-                            <img class="points" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/points1.png" alt="presentation" />
-                            <img class="presentation" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/qui.png" alt="presentation" />
-                            <img class="points" src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/points2.png" alt="presentation" />
+                            <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points1.png" alt="presentation" />
+                            <img class="presentation" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/qui.png" alt="presentation" />
+                            <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points2.png" alt="presentation" />
                             <h1>Qui suis-je ?</h1>
                         </div>
                     </a>
@@ -34,7 +34,7 @@ get_header(); ?>
                     <div class="home-sections">
                         <div>
                             <a href="#">
-                                <img src="http://localhost/site_maxime/wp-content/themes/myTheme/assets/images/formation1.png" alt="formation" />
+                                <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/formation1.png" alt="formation" />
                                 <section class="home-formation">
                                     <h1>Ma formation</h1>
                                 </section>
