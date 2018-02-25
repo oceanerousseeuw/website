@@ -1914,8 +1914,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
 	color: #222;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 30px;
 	font-weight: 800;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
@@ -3860,14 +3859,9 @@ p > object:only-child {
 
 	/* Posts */
 
-	.site-content {
-		padding: 5.5em 0 0;
-	}
-
 	.single-post .entry-title,
 	.page .entry-title {
 		font-size: 26px;
-		font-size: 1.625rem;
 	}
 
 	.comments-pagination,
@@ -4019,7 +4013,7 @@ p > object:only-child {
 	.page.page-one-column .entry-header,
 	.twentyseventeen-front-page.page-one-column .entry-header,
 	.archive.page-one-column:not(.has-sidebar) .page-header {
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 	}
 
 	.page:not(.home) #content {
