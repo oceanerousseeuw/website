@@ -22,7 +22,7 @@ get_header(); ?>
             <main id="main" class="site-main" role="main">
 
                 <div class="home-container">
-                    <a href="<?php echo bloginfo('url')?>/presentation/">
+                    <a href="<?php echo bloginfo('url')?>/index.php/presentation/">
                         <div class="home-presentation">
                             <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points1.png" alt="presentation" />
                             <img class="presentation" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/qui.png" alt="presentation" />
