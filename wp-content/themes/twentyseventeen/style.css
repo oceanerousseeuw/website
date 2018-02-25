@@ -1879,8 +1879,12 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 --------------------------------------------------------------*/
 
 .site-content-contain {
+	margin-top: -70px;
 	background-color: #fff;
 	position: relative;
+}
+.home .site-content-contain {
+	margin-top: 0;
 }
 
 .site-content {
@@ -3538,7 +3542,7 @@ p > object:only-child {
 	}
 
 	.navigation-top .wrap {
-		max-width: 1050px;
+		max-width: 1100px;
 		/* The font size is 14px here and we need 50px padding in ems */
 		padding: 0.75em 3.4166666666667em;
 	}
