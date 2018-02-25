@@ -33,14 +33,14 @@ get_header(); ?>
 
                     <div class="home-sections">
                         <div>
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/ma-formation">
                                 <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/formation1.png" alt="formation" />
                                 <section class="home-formation">
                                     <h1>Ma formation</h1>
                                 </section>
                             </a>
 
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/mon-exp-pro">
                                 <section class="home-experience">
                                     <h1>Mon expérience Pro</h1>
                                 </section>
@@ -48,19 +48,25 @@ get_header(); ?>
                         </div>
 
                         <div>
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/mes-hobbies">
                                 <section class="home-interets">
                                     <h1>Mes hobbies</h1>
                                 </section>
                             </a>
 
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/mes-realisations">
                                 <section class="home-realisations">
                                     <h1>Mes réalisations</h1>
                                 </section>
                             </a>
                         </div>
                     </div>
+
+                    <a href="<?php echo bloginfo('url')?>/index.php/contactez-moi/">
+                        <div class="home-contact">
+                            <h1>Contactez-moi</h1>
+                        </div>
+                    </a>
                 </div>
 
             </main><!-- #main -->

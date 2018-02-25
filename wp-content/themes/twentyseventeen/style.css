@@ -2322,7 +2322,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	padding : 20px;
 }
 
-#page .home-presentation{
+#page .home-presentation, #page .home-contact{
 	box-shadow: 1px 1px 12px #eee;
 	width: 84%;
 	display: inline-block;
