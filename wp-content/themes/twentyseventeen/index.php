@@ -49,12 +49,14 @@ get_header(); ?>
 
                         <div>
                             <a href="#">
+                                <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/hobbies.png" alt="hobbies" />
                                 <section class="home-interets">
                                     <h1>Mes hobbies</h1>
                                 </section>
                             </a>
 
                             <a href="#">
+                                <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/realisations.png" alt="realisations" />
                                 <section class="home-realisations">
                                     <h1>Mes réalisations</h1>
                                 </section>
