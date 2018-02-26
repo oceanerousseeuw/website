@@ -41,6 +41,7 @@ get_header(); ?>
                             </a>
 
                             <a href="#">
+                                <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/experience.png" alt="experience" />
                                 <section class="home-experience">
                                     <h1>Mon expérience Pro</h1>
                                 </section>

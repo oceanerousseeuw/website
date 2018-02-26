@@ -2376,10 +2376,10 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 #page .home-sections a:hover img{
-	transition : transform 1.2s;
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(0.2);
-	transform: scale(0.2);
+	transition: transform .2s;
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
 }
 	/*--------------------------------------------------------------
     13.7 Footer
