@@ -2319,6 +2319,10 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	text-align: center;
 }
 
+#page #primary .home-container{
+	margin-top: -15px;
+}
+
 #page #primary .home-container div{
 	min-height: 280px;
 	box-sizing: border-box;
