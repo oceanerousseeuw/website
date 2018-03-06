@@ -2338,7 +2338,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	display: inline-block;
 }
 
-#page .home-presentation:hover{
+#page .home-presentation:hover, #page .home-contact:hover{
 	box-shadow: 1px 1px 12px #555;
 	transition: box-shadow .7s;
 }
@@ -2378,7 +2378,15 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	width: 17%;
 }
 
-#page .home-presentation:hover .presentation{
+#page .home-contact .contact{
+	padding-top: 15px;
+}
+
+#page .home-contact h1{
+	padding-top: 0;
+}
+
+#page .home-presentation:hover .presentation, #page .home-contact:hover .contact{
 	transition : transform 1.2s;
 	-ms-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
