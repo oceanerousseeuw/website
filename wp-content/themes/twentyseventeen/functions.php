@@ -584,3 +584,13 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+add_action('pre_get_posts', 'no_sub_cat');
+function no_sub_cat($query) {
+    if ( $query->is_category() && $query->is_main_query() ) {
+        $cat_ID = $query->get_queried_object_id();
+        $query->set( 'category_name', null );
+        $query->set( 'cat', null );
+        $query->set( 'category__in', array($cat_ID) );
+    }
+}
