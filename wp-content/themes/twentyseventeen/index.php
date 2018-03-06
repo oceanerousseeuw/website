@@ -22,7 +22,7 @@ get_header(); ?>
             <main id="main" class="site-main" role="main">
 
                 <div class="home-container">
-                    <a href="<?php echo bloginfo('url')?>/index.php/presentation/">
+                    <a href="<?php echo bloginfo('url')?>/index.php/category/qui-suis-je/">
                         <div class="home-presentation">
                             <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points1.png" alt="presentation" />
                             <img class="presentation" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/qui.png" alt="presentation" />
@@ -33,14 +33,14 @@ get_header(); ?>
 
                     <div class="home-sections">
                         <div>
-                            <a href="<?php echo bloginfo('url')?>/index.php/ma-formation">
+                            <a href="<?php echo bloginfo('url')?>/index.php/category/ma-formation">
                                 <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/formation1.png" alt="formation" />
                                 <section class="home-formation">
                                     <h1>Ma formation</h1>
                                 </section>
                             </a>
 
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/category/mon-experience-professionnelle"">
                                 <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/experience.png" alt="experience" />
                                 <section class="home-experience">
                                     <h1>Mon expérience Pro</h1>
@@ -49,14 +49,14 @@ get_header(); ?>
                         </div>
 
                         <div>
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/category/mes-centres-dinteret">
                                 <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/hobbies.png" alt="hobbies" />
                                 <section class="home-interets">
                                     <h1>Mes hobbies</h1>
                                 </section>
                             </a>
 
-                            <a href="#">
+                            <a href="<?php echo bloginfo('url')?>/index.php/category/mes-realisations"">
                                 <img src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/realisations.png" alt="realisations" />
                                 <section class="home-realisations">
                                     <h1>Mes réalisations</h1>
@@ -65,7 +65,7 @@ get_header(); ?>
                         </div>
                     </div>
 
-                    <a href="<?php echo bloginfo('url')?>/index.php/contactez-moi/">
+                    <a href="<?php echo bloginfo('url')?>/index.php/category/contactez-moi/">
                         <div class="home-contact">
                             <h1>Contactez-moi</h1>
                         </div>
