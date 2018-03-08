@@ -517,11 +517,6 @@ add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
  * @return array The filtered attributes for the image markup.
  */
 function twentyseventeen_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
-	if ( is_archive() || is_search() || is_home() ) {
-		$attr['sizes'] = '(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px';
-	} else {
-		$attr['sizes'] = '100vw';
-	}
 
 	return $attr;
 }
@@ -584,3 +579,13 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+add_action('pre_get_posts', 'no_sub_cat');
+function no_sub_cat($query) {
+    if ( $query->is_category() && $query->is_main_query() ) {
+        $cat_ID = $query->get_queried_object_id();
+        $query->set( 'category_name', null );
+        $query->set( 'cat', null );
+        $query->set( 'category__in', array($cat_ID) );
+    }
+}
