@@ -1303,16 +1303,26 @@ a:hover .nav-title,
 }
 
 .category-mes-competences .post-thumbnail img {
-	width: 50%;
+	width: 54%;
 }
 
-.category-mes-etudes .post-thumbnail img, .category-barman .post-thumbnail img, .category-mes-centres-dinteret .post-thumbnail img {
+.category-mes-etudes .post-thumbnail img, .category-mes-centres-dinteret .post-thumbnail img {
 	width: 75%;
+}
+
+.category-barman .post-thumbnail img{
+	width: 100%;
+}
+
+.category-mon-experience-professionnelle .post-thumbnail img {
+	width: 60%;
 }
 
 .category-developpeur-web .post-thumbnail img {
 	width: 85%;
 }
+
+
 	/*--------------------------------------------------------------
     12.0 Navigation
     --------------------------------------------------------------*/
@@ -2062,21 +2072,38 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	justify-content: space-around;
 }
 
-.category-mes-competences .entry-content{
+.category-mes-competences .entry-content, .category-mes-etudes .entry-content,
+.category-barman .entry-content{
+	text-align: left;
 	margin-top: 0;
 }
 
-.category-mes-competences .entry-content{
-	text-align: left;
-}
-
-.category-mes-competences .entry-content span{
+.category-mes-competences .entry-content span, .category-mes-etudes .entry-content span,
+.category-barman .entry-content span{
 	font-weight: bold;
 }
 
-.category-mes-competences .entry-content h3{
+.category-mes-competences .entry-content h3, .category-mes-etudes .entry-content h3{
 	padding-top: 0;
 	margin-bottom: 0;
+}
+
+.category-mes-competences .entry-content a, .category-mes-etudes .entry-content a ,
+.category-barman .entry-content a{
+	display: block;
+	text-align: right;
+}
+
+.category-mes-etudes .entry-content a{
+	margin-top: 95px;
+}
+
+.category-barman .entry-content a{
+	margin-top: -11px;
+}
+
+.category-mes-etudes .entry-content li{
+	margin-bottom: 15px;
 }
 /* Blog landing, search, archives */
 
@@ -2101,6 +2128,10 @@ body:not(.twentyseventeen-front-page) .entry-content{
 	box-sizing: border-box;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+body:not(.twentyseventeen-front-page).category-qui-suis-je .entry-content {
+	box-sizing: border-box;
+	padding-left: 100px;
 }
 
 body:not(.twentyseventeen-front-page) .entry-header {
