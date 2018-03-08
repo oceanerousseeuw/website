@@ -67,6 +67,7 @@ get_header(); ?>
 
                     <a href="<?php echo bloginfo('url')?>/index.php/category/contactez-moi/">
                         <div class="home-contact">
+                            <img class="contact" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/contact.png" alt="presentation" />
                             <h1>Contactez-moi</h1>
                         </div>
                     </a>
