@@ -1319,9 +1319,12 @@ a:hover .nav-title,
 }
 
 .category-developpeur-web .post-thumbnail img {
-	width: 85%;
+	width: 100%;
 }
 
+.category-technicien-telecom .post-thumbnail img {
+	height: 97%;
+}
 
 	/*--------------------------------------------------------------
     12.0 Navigation
@@ -2073,37 +2076,77 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .category-mes-competences .entry-content, .category-mes-etudes .entry-content,
-.category-barman .entry-content{
+.category-barman .entry-content, .category-developpeur-web .entry-content,
+.category-technicien-telecom .entry-content, .category-morpion .entry-content,
+.category-pac-man .entry-content, .category-labyrinthe .entry-content{
 	text-align: left;
 	margin-top: 0;
 }
 
 .category-mes-competences .entry-content span, .category-mes-etudes .entry-content span,
-.category-barman .entry-content span{
+.category-barman .entry-content span, .category-developpeur-web .entry-content span,
+.category-technicien-telecom .entry-content span, .category-morpion .entry-content span,
+.category-pac-man .entry-content span, .category-labyrinthe .entry-content span{
 	font-weight: bold;
 }
 
-.category-mes-competences .entry-content h3, .category-mes-etudes .entry-content h3{
+.category-mes-competences .entry-content h3, .category-mes-etudes .entry-content h3,
+.category-developpeur-web .entry-content h3, .category-technicien-telecom .entry-content h3,
+.category-morpion .entry-content h3, .category-pac-man .entry-content h3,
+.category-labyrinthe .entry-content h3{
 	padding-top: 0;
 	margin-bottom: 0;
 }
 
 .category-mes-competences .entry-content a, .category-mes-etudes .entry-content a ,
-.category-barman .entry-content a{
+.category-barman .entry-content a, .category-developpeur-web .entry-content a,
+.category-technicien-telecom .entry-content a, .category-morpion .entry-content a,
+.category-pac-man .entry-content a, .category-labyrinthe .entry-content a{
 	display: block;
 	text-align: right;
+}
+
+.category-morpion .entry-content a.archive, .category-pac-man .entry-content a.archive,
+.category-labyrinthe .entry-content a.archive{
+	text-align: left;
+	display: inline;
 }
 
 .category-mes-etudes .entry-content a{
 	margin-top: 95px;
 }
 
+.category-pac-man .entry-content a{
+	margin-top: 120px;
+}
+
+
+.category-pac-man .entry-content a.archive{
+	margin-top: 0;
+}
+
 .category-barman .entry-content a{
 	margin-top: -11px;
 }
 
+.category-developpeur-web .entry-content a{
+	margin-top: -20px;
+}
+
 .category-mes-etudes .entry-content li{
 	margin-bottom: 15px;
+}
+
+.category-developpeur-web .entry-content{
+	width: 70%;
+}
+
+.category-mes-centres-dinteret .entry-content{
+	width: 55%;
+}
+
+.category-mes-realisations .phrase-finale{
+	margin-top: 30px;
 }
 /* Blog landing, search, archives */
 
@@ -2209,6 +2252,9 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 /* Entry footer */
 
+footer .linkedin{
+	width: 35%;
+}
 .entry-footer {
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
