@@ -1,3 +1,6 @@
 /wp-config.php
 /.htaccess
 /.idea/*
+
+wp-content/uploads/ithemes-security/logs/index.php
+wp-content/uploads/ithemes-security/backups/index.php
