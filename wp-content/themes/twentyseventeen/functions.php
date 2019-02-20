@@ -589,3 +589,22 @@ function no_sub_cat($query) {
         $query->set( 'category__in', array($cat_ID) );
     }
 }
+
+function sendMail(){
+    //echo 'ici';
+    $name = $_POST['name'];
+    $firstname = $_POST['firstname'];
+    if($_POST['society']){
+        $society = $_POST['society'];
+    }else{
+        $society = "aucune société";
+    }
+    $message = $_POST['message'];
+
+    $finalMessage = $firstname . " " . "$name" . "( " . $society . " ) a essayé de vous contacter. \nContenu du message : \n" . $message;
+
+    if(mail('contact.maxime.sauvage@gmail.com', 'Contact', $finalMessage)) {
+        wp_redirect(get_home_url());
+        exit();
+    }
+}

@@ -315,8 +315,8 @@ msgid "Oops! That page can&rsquo;t be found."
 msgstr "Aie&nbsp;! Cette page est introuvable."
 
 #: 404.php:24
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Apparemment, rien n&rsquo;a été trouvé à cette adresse. Essayez avec une recherche&nbsp;?"
+msgid "It looks like nothing was found at this location. Return to the Home Page ?"
+msgstr "Apparemment, rien n&rsquo;a été trouvé à cette adresse. Retourner à la page d'accueil ?"
 
 #: archive.php:45 index.php:50 search.php:43
 msgid "Previous page"

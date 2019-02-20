@@ -201,8 +201,7 @@ select {
 
 button,
 html [type="button"],
-[type="reset"],
-[type="submit"] {
+[type="reset"] {
 	-webkit-appearance: button;
 }
 
@@ -995,6 +994,7 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
+	margin-top: 20px;
 	background-color: #222;
 	border: 0;
 	-webkit-border-radius: 2px;
@@ -2165,16 +2165,37 @@ body:not(.twentyseventeen-front-page) .entry-content,
 body:not(.twentyseventeen-front-page) #comments {
 	margin-left: auto;
 	margin-right: auto;
+	width: 85%;
 }
 
 body:not(.twentyseventeen-front-page) .entry-content{
 	box-sizing: border-box;
 	padding-left: 20px;
 	padding-right: 20px;
+	text-align: left;
 }
+
 body:not(.twentyseventeen-front-page).category-qui-suis-je .entry-content {
 	box-sizing: border-box;
 	padding-left: 100px;
+}
+
+body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
+body:not(.twentyseventeen-front-page).category-technicien-telecom .entry-content {
+	margin-top: 0;
+}
+
+body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
+body:not(.twentyseventeen-front-page).category-mes-centres-dinteret .entry-content{
+	width: 60%;
+}
+
+body:not(.twentyseventeen-front-page).category-mes-realisations .entry-content{
+	text-align: center;
+}
+
+body:not(.twentyseventeen-front-page).category-mes-realisations .phrase-finale{
+	margin-top: 20px;
 }
 
 body:not(.twentyseventeen-front-page) .entry-header {
