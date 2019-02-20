@@ -34,8 +34,8 @@
     if (home_url($wp->request) == $url): ?>
         <form method="post" type="submit" action="<?php sendMail() ?>">
             <div>
-                <label for="name">Nom : <span class="required">*</span> </label>
-                <input type="text" name="name" id="name" required="required"/>
+                <label for="lastname">Nom : <span class="required">*</span> </label>
+                <input type="text" name="lastname" id="lastname" required="required"/>
             </div>
             <div>
                 <label for="firstname">Prénom : <span class="required">*</span> </label>
@@ -46,10 +46,10 @@
                 <input type="text" name="society" id="society"/>
             </div>
             <div>
-                <label for="message">Votre message : <span class="required">*</span></label>
-                <input type="text" name="message" id="message" required="required"/>
+                <label for="content_message">Votre message : <span class="required">*</span></label>
+                <input type="text" name="content_message" id="content_message" required="required"/>
             </div>
-            <input type="submit" value="Envoyer"/>
+            <input type="submit" value="Envoyer" onclick="displayAlert()"/>
         </form>
     <?php else: ?>
         <div class="content-post">
@@ -85,3 +85,9 @@
     ?>
 
 </article><!-- #post-## -->
+
+<script>
+    function displayAlert(){
+        alert("Message envoyé !");
+    }
+</script>
