@@ -2486,15 +2486,35 @@ footer .linkedin{
 	margin-bottom: 0;
 }
 
-#page .home-sections div{
-	display: flex;
-	justify-content: space-around;
+@media screen and (min-width: 800px){
+	#page .home-sections div {
+		display: flex;
+		justify-content: space-around;
+	}
 }
 
-#page .home-sections a{
-	width: 40%;
-	border: 1px solid #eee;
-	box-shadow: 1px 1px 12px #eee;
+@media screen and (max-width:799px){
+	#page .home-sections a{
+		min-height: 280px;
+		box-sizing: border-box;
+		padding : 20px;
+		width: 100%;
+		display: inline-block;
+		box-shadow: 1px 1px 12px #eee;
+	}
+
+
+	#page .home-sections a:first-child{
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width:800px) {
+	#page .home-sections a {
+		width: 40%;
+		border: 1px solid #eee;
+		box-shadow: 1px 1px 12px #eee;
+	}
 }
 
 #page .home-sections a:hover{

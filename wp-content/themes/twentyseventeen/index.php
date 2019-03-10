@@ -24,9 +24,9 @@ get_header(); ?>
                 <div class="home-container">
                     <a href="<?php echo bloginfo('url')?>/index.php/category/qui-suis-je/">
                         <div class="home-presentation">
-                            <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points1.png" alt="presentation" />
+                            <!--<img class="points" src="<?php //echo get_template_directory_uri() ?>/../myTheme/assets/images/points1.png" alt="presentation" />-->
                             <img class="presentation" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/qui.png" alt="presentation" />
-                            <img class="points" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/points2.png" alt="presentation" />
+                            <!--<img class="points" src="<?php //echo get_template_directory_uri() ?>/../myTheme/assets/images/points2.png" alt="presentation" />-->
                             <h1>Qui suis-je ?</h1>
                         </div>
                     </a>
@@ -65,12 +65,12 @@ get_header(); ?>
                         </div>
                     </div>
 
-                    <a href="<?php echo bloginfo('url')?>/index.php/category/contactez-moi/">
+                    <!--<a href="<?php //echo bloginfo('url')?>/index.php/category/contactez-moi/">
                         <div class="home-contact">
-                            <img class="contact" src="<?php echo get_template_directory_uri() ?>/../myTheme/assets/images/contact.png" alt="presentation" />
+                            <img class="contact" src="<?php //echo get_template_directory_uri() ?>/../myTheme/assets/images/contact.png" alt="presentation" />
                             <h1>Contactez-moi</h1>
                         </div>
-                    </a>
+                    </a>-->
                 </div>
 
             </main><!-- #main -->
