@@ -1900,7 +1900,6 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 --------------------------------------------------------------*/
 
 .site-content-contain {
-	margin-top: -70px;
 	background-color: #fff;
 	position: relative;
 }
@@ -2185,9 +2184,12 @@ body:not(.twentyseventeen-front-page).category-technicien-telecom .entry-content
 	margin-top: 0;
 }
 
-body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
-body:not(.twentyseventeen-front-page).category-mes-centres-dinteret .entry-content{
-	width: 60%;
+
+@media screen and (min-width: 800px) {
+	body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
+	body:not(.twentyseventeen-front-page).category-mes-centres-dinteret .entry-content {
+		width: 60%;
+	}
 }
 
 body:not(.twentyseventeen-front-page).category-mes-realisations .entry-content{
@@ -2437,8 +2439,17 @@ footer .linkedin{
 	padding-bottom: 1.5em;
 }
 
-.content-post{
-	display: flex;
+
+@media screen and (min-width: 800px) {
+	.content-post {
+		display: flex;
+	}
+}
+
+@media screen and (max-width:800px){
+	body:not(.twentyseventeen-front-page).category-qui-suis-je .entry-content{
+		padding: 0;
+	}
 }
 
 /* 404 page */
@@ -2522,9 +2533,18 @@ footer .linkedin{
 	transition: box-shadow .7s;
 }
 
-#page .home-sections a img{
-	margin-top: 20px;
-	width: 50%;
+@media screen and (min-width:400px) {
+	#page .home-sections a img {
+		margin-top: 20px;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:399px) {
+	#page .home-sections a img {
+		margin-top: 20px;
+		width: 69%;
+	}
 }
 
 #page .home-presentation img{
