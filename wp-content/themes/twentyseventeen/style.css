@@ -1318,7 +1318,7 @@ a:hover .nav-title,
 	width: 60%;
 }
 
-.category-developpeur-web .post-thumbnail img {
+.category-developpeur-web-net .post-thumbnail img {
 	width: 100%;
 }
 
@@ -2075,7 +2075,8 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .category-mes-competences .entry-content, .category-mes-etudes .entry-content,
-.category-barman .entry-content, .category-developpeur-web .entry-content,
+.category-barman .entry-content, .category-developpeur-web-net .entry-content,
+.category-developpeur-web-javascript .entry-content,
 .category-technicien-telecom .entry-content, .category-morpion .entry-content,
 .category-pac-man .entry-content, .category-labyrinthe .entry-content{
 	text-align: left;
@@ -2083,14 +2084,16 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .category-mes-competences .entry-content span, .category-mes-etudes .entry-content span,
-.category-barman .entry-content span, .category-developpeur-web .entry-content span,
+.category-barman .entry-content span, .category-developpeur-web-net .entry-content span,
+.category-developpeur-web-javascript .entry-content span,
 .category-technicien-telecom .entry-content span, .category-morpion .entry-content span,
 .category-pac-man .entry-content span, .category-labyrinthe .entry-content span{
 	font-weight: bold;
 }
 
 .category-mes-competences .entry-content h3, .category-mes-etudes .entry-content h3,
-.category-developpeur-web .entry-content h3, .category-technicien-telecom .entry-content h3,
+.category-developpeur-web-net .entry-content h3,
+.category-developpeur-web-javascript .entry-content h3, .category-technicien-telecom .entry-content h3,
 .category-morpion .entry-content h3, .category-pac-man .entry-content h3,
 .category-labyrinthe .entry-content h3{
 	padding-top: 0;
@@ -2098,7 +2101,8 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .category-mes-competences .entry-content a, .category-mes-etudes .entry-content a ,
-.category-barman .entry-content a, .category-developpeur-web .entry-content a,
+.category-barman .entry-content a, .category-developpeur-web-net .entry-content a,
+.category-developpeur-web-javascript .entry-content a,
 .category-technicien-telecom .entry-content a, .category-morpion .entry-content a,
 .category-pac-man .entry-content a, .category-labyrinthe .entry-content a{
 	display: block;
@@ -2128,7 +2132,8 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	margin-top: -11px;
 }
 
-.category-developpeur-web .entry-content a{
+.category-developpeur-web-net .entry-content a,
+.category-developpeur-web-javascript .entry-content a{
 	margin-top: -20px;
 }
 
@@ -2136,7 +2141,8 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	margin-bottom: 15px;
 }
 
-.category-developpeur-web .entry-content{
+.category-developpeur-web-net .entry-content,
+.category-developpeur-web-javascript .entry-content{
 	width: 70%;
 }
 
@@ -2179,14 +2185,16 @@ body:not(.twentyseventeen-front-page).category-qui-suis-je .entry-content {
 	padding-left: 100px;
 }
 
-body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
+body:not(.twentyseventeen-front-page).category-developpeur-web-net .entry-content,
+body:not(.twentyseventeen-front-page).category-developpeur-web-javascript .entry-content,
 body:not(.twentyseventeen-front-page).category-technicien-telecom .entry-content {
 	margin-top: 0;
 }
 
 
 @media screen and (min-width: 800px) {
-	body:not(.twentyseventeen-front-page).category-developpeur-web .entry-content,
+	body:not(.twentyseventeen-front-page).category-developpeur-web-net .entry-content,
+	body:not(.twentyseventeen-front-page).category-developpeur-web-javascript .entry-content,
 	body:not(.twentyseventeen-front-page).category-mes-centres-dinteret .entry-content {
 		width: 60%;
 	}
